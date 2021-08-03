@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        .container {
+            min-height: 500px;
+            max-height: 100vh;
+            min-width: 300px;
+            max-width: 624px;
+            margin: 0 auto;
+            padding: 1rem;
+            gap: 16px;
+            display: grid;
+            grid-template-areas: "table1 table1 table1"
+                                 "table2 table3 table3"
+                                 "table4 table4 table4"
+                                 "table5 table5 table5"
+                                 "table6 table6 table6"
+        }
+
+        .table {
+            background-color: black;
+            min-height: 0.5rem;
+            background: url("/bg.jpeg");
+            background-size: 300px;
+        }
+
+        .table-1 {
+            grid-area: table1;
+            margin-left: 5rem;
+        }
+        .table-2 {
+            grid-area: table2;
+        }
+        .table-3 {
+            grid-area: table3;
+        }
+        .table-4 {
+            grid-area: table4;
+        }
+        .table-5 {
+            grid-area: table5;
+            margin-right: 5rem;
+        }
+        .table-6 {
+            grid-area: table6;
+            margin-left: 5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="table table-1"></div>
+        <div class="table table-2"></div>
+        <div class="table table-3"></div>
+        <div class="table table-4"></div>
+        <div class="table table-5"></div>
+        <div class="table table-6"></div>
+    </div>
+</body>
+
+</html>
